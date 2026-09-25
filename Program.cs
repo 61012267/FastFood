@@ -57,7 +57,7 @@ app.MapGet("/api/productos", () =>
             material = "Goma Guar Natural",
             temporada = "Todo el año",
             descuento = 20,
-            imagen = "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=500",
+            imagen = "https://www.ecotienda.pe/wp-content/uploads/2022/08/039978025548-1.jpg",
             descripcion = "Espesante natural ideal para panadería y repostería libre de gluten. Mejora la textura y volumen."
         },
         new {
