@@ -74,7 +74,7 @@ app.MapGet("/api/productos", () =>
             material = "Harina de almendras y gotas de chocolate oscuro",
             temporada = "Todo el año",
             descuento = 25,
-            imagen = "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500",
+            imagen = "https://www.ecotienda.pe/wp-content/uploads/2022/08/39978004673.jpg",
             descripcion = "Mezcla lista para horneado rápido de galletas crocantes con chispas de chocolate artesanal."
         },
         new {
