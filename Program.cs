@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Configuración de CORS para permitir peticiones desde Vite / Frontend
+// 1. Configuración de CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -13,88 +13,107 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// 2. Uso del Middleware de CORS
+// 2. Middlewares para Servir Archivos Estáticos (wwwroot) y CORS
 app.UseCors();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 // 3. Endpoint de verificación
-app.MapGet("/", () => "🍔 API Fast Food & Pizzería funcionando correctamente v1.0");
+app.MapGet("/", () => "🛍️ API MarketExpress 3D Fresh - Minimarket & Orgánicos v1.0");
 
-// 4. Endpoint principal del Menú / Productos
+// 4. Endpoint principal de Productos del Minimarket
 app.MapGet("/api/productos", () =>
 {
     return Results.Ok(new object[]
     {
         new {
             id = 1,
-            codigo = "CMB-001",
-            nombre = "Combo Royale Burger",
-            categoria = "Hamburguesas",
-            genero = "Doble",
-            talla = "Papas + Bebida",
-            color = "Sin Picante",
-            precio = 28.90,
-            stock = 25,
-            marca = "Angus",
-            material = "Carne de res, Queso Cheddar, Tocino",
+            codigo = "REP-001",
+            nombre = "Polvo de Cacao Orgánico",
+            categoria = "Repostería",
+            genero = "Orgánico",
+            talla = "250g",
+            color = "Cacao Puro",
+            precio = 19.50,
+            stock = 20,
+            marca = "Calypso",
+            material = "100% Cacao Orgánico en Polvo",
             temporada = "Todo el año",
-            descuento = 10,
-            imagen = "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
-            descripcion = "Doble carne 100% Angus con queso cheddar fundido, tocino ahumado, papas fritas familiares y gaseosa de 500ml."
+            descuento = 0,
+            imagen = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500",
+            descripcion = "Cacao puro en polvo de origen peruano, ideal para repostería saludable, batidos y avena."
         },
         new {
             id = 2,
-            codigo = "PIZ-002",
-            nombre = "Pizza Pepperoni Suprema",
-            categoria = "Pizzas",
-            genero = "Familiar",
-            talla = "12 Porciones",
-            color = "Masa Tradicional",
-            precio = 45.00,
-            stock = 15,
-            marca = "Artesanal",
-            material = "Queso Mozzarella, Pepperoni, Salsa de tomate",
+            codigo = "REP-002",
+            nombre = "Guar Gum Gluten Free",
+            categoria = "Repostería",
+            genero = "Sin Gluten",
+            talla = "226g",
+            color = "Polvo Fino",
+            precio = 35.90,
+            stock = 14,
+            marca = "Bob's Red Mill",
+            material = "Goma Guar Natural",
             temporada = "Todo el año",
-            descuento = 15,
-            imagen = "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500",
-            descripcion = "Pizza gigante con abundante queso mozzarella, rodajas de pepperoni crujiente y orégano fresco."
+            descuento = 20,
+            imagen = "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=500",
+            descripcion = "Espesante natural ideal para panadería y repostería libre de gluten. Mejora la textura y volumen."
         },
         new {
             id = 3,
-            codigo = "BEB-003",
-            nombre = "Inca Kola 1.5L",
-            categoria = "Bebidas",
-            genero = "1.5 Litros",
-            talla = "Familiar",
-            color = "Helada",
-            precio = 9.50,
-            stock = 4, // ¡Dispara la alerta de stock bajo!
-            marca = "Coca-Cola Company",
-            material = "Gaseosa con gas",
+            codigo = "REP-003",
+            nombre = "Mezcla para Galletas Choco Chips",
+            categoria = "Repostería",
+            genero = "Keto/Healthy",
+            talla = "624g",
+            color = "Choco Chips",
+            precio = 29.20,
+            stock = 3, // ¡Dispara alerta de stock bajo!
+            marca = "Bob's Red Mill",
+            material = "Harina de almendras y gotas de chocolate oscuro",
             temporada = "Todo el año",
-            descuento = 0,
-            imagen = "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500",
-            descripcion = "Bebida gaseosa helada de 1.5 litros ideal para acompañar combos familiares."
+            descuento = 25,
+            imagen = "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500",
+            descripcion = "Mezcla lista para horneado rápido de galletas crocantes con chispas de chocolate artesanal."
         },
         new {
             id = 4,
-            codigo = "PST-004",
-            nombre = "Volcán de Chocolate",
-            categoria = "Postres",
-            genero = "Personal",
-            talla = "1 Unidad",
-            color = "Caliente",
-            precio = 14.00,
-            stock = 12,
-            marca = "Bakery Express",
-            material = "Cacao 70%, Bola de helado de vainilla",
+            codigo = "BEB-004",
+            nombre = "Leche de Almendras Original Unsweetened",
+            categoria = "Lácteos y Bebidas",
+            genero = "Plant-Based",
+            talla = "1 Litro",
+            color = "Natural",
+            precio = 16.80,
+            stock = 18,
+            marca = "Silk",
+            material = "Almendras tostadas, calcio y vitaminas",
             temporada = "Todo el año",
-            descuento = 5,
-            imagen = "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500",
-            descripcion = "Bizcocho tibio de chocolate relleno de fudge derretido, acompañado con una bola de helado de vainilla."
+            descuento = 10,
+            imagen = "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500",
+            descripcion = "Bebida vegetal de almendras sin azúcar añadida, enriquecida con calcio y vitamina D."
+        },
+        new {
+            id = 5,
+            codigo = "SNK-005",
+            nombre = "Matcha Latte Orgánico en Polvo",
+            categoria = "Bebidas",
+            genero = "Superfood",
+            talla = "150g",
+            color = "Verde Matcha",
+            precio = 42.00,
+            stock = 2, // ¡Dispara alerta de stock crítico!
+            marca = "Matcha Co",
+            material = "Té Verde Matcha Grado Ceremonial",
+            temporada = "Todo el año",
+            descuento = 15,
+            imagen = "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=500",
+            descripcion = "Té verde matcha ceremonial rico en antioxidantes para energía natural y concentración."
         }
     });
 });
 
-// 5. Configuración dinámica del puerto para Render o entorno local
+// 5. Asignación dinámica de puerto para Render o entorno local
 var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
 app.Run($"http://0.0.0.0:{port}");
