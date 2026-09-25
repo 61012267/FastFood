@@ -41,7 +41,7 @@ app.MapGet("/api/productos", () =>
             material = "100% Cacao Orgánico en Polvo",
             temporada = "Todo el año",
             descuento = 0,
-            imagen = "https://pe.iherb.com/pr/viva-naturals-organic-cacao-powder-1-lb-454-g/141400",
+            imagen = "https://media.falabella.com/tottusPE/41470835_1/public",
             descripcion = "Cacao puro en polvo de origen peruano, ideal para repostería saludable, batidos y avena."
         },
         new {
