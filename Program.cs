@@ -128,7 +128,7 @@ app.MapGet("/api/productos", () =>
             material = "Crema de leche pasteurizada y sal",
             temporada = "Todo el año",
             descuento = 7,
-            imagen = "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=500",
+            imagen = "https://corporacionliderperu.com/52925-large_default/gloria-mantequilla-pote-x-390-gr.jpg",
             descripcion = "Mantequilla tradicional Gloria en pote, ideal para untar en desayunos y repostería."
         },
         new {
@@ -145,7 +145,7 @@ app.MapGet("/api/productos", () =>
             material = "Leche evaporada concentrada y vitaminas A y D",
             temporada = "Todo el año",
             descuento = 0,
-            imagen = "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500",
+            imagen = "https://vegaperu.vtexassets.com/arquivos/ids/161725-1600-auto?v=638054217213030000&width=1600&height=auto&aspect=true",
             descripcion = "Paquete de 6 latas de mezcla láctea fortificada con hierro y vitaminas para la familia."
         },
         new {
@@ -162,7 +162,7 @@ app.MapGet("/api/productos", () =>
             material = "100% Café peruano tueste oscuro",
             temporada = "Todo el año",
             descuento = 26,
-            imagen = "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500",
+            imagen = "https://tiendanestle.pe/cdn/shop/files/4551_1.jpg?v=1692026792&width=990",
             descripcion = "Café instantáneo rendidor de sabor intenso y aroma tradicional, lata de 180 gramos."
         },
         new {
@@ -179,7 +179,7 @@ app.MapGet("/api/productos", () =>
             material = "Pechuga de pollo seleccionada y empanizado crujiente",
             temporada = "Todo el año",
             descuento = 20,
-            imagen = "https://images.unsplash.com/photo-1562967914-608f82629710?w=500",
+            imagen = "https://avinkape.vtexassets.com/arquivos/ids/156438-1200-auto?v=638966799449600000&width=1200&height=auto&aspect=true",
             descripcion = "Nuggets de pollo crocantes precocidos listos para freír o hacer en airfryer en minutos."
         },
         new {
@@ -196,7 +196,7 @@ app.MapGet("/api/productos", () =>
             material = "Huevos de codorniz seleccionados",
             temporada = "Todo el año",
             descuento = 0,
-            imagen = "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500",
+            imagen = "https://media.falabella.com/tottusPE/43392387_1/w=1200,h=1200,fit=pad",
             descripcion = "Huevos de codorniz frescos y nutritivos en empaque protegido de 18 unidades."
         },
         new {
@@ -213,7 +213,7 @@ app.MapGet("/api/productos", () =>
             material = "Leche descremada UHT digestiva",
             temporada = "Todo el año",
             descuento = 5,
-            imagen = "https://images.unsplash.com/photo-1528750997573-59b89d56f4f7?w=500",
+            imagen = "https://plazavea.vteximg.com.br/arquivos/ids/35081609-465-465/20402671.jpg",
             descripcion = "Tripack de leche UHT ligera y fácil de digerir, baja en grasas y sin lactosa."
         },
         new {
@@ -230,13 +230,13 @@ app.MapGet("/api/productos", () =>
             material = "Papas nativas peruanas y aceite de girasol",
             temporada = "Todo el año",
             descuento = 10,
-            imagen = "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=500",
+            imagen = "https://metroio.vtexassets.com/arquivos/ids/412538-800-auto?v=638279044334200000&width=800&height=auto&aspect=true",
             descripcion = "Snack de papas nativas crujientes con hojuelas de sal marina natural."
         },
         new {
             id = 13,
             codigo = "BEB-013",
-            nombre = "Jugo Natural de Naranja Fresca",
+            nombre = "Jugo Natural de Naranja Fresca del VALLE",
             categoria = "Lácteos y Bebidas",
             genero = "100% Fruta",
             talla = "1 Litro",
@@ -247,7 +247,7 @@ app.MapGet("/api/productos", () =>
             material = "Jugo exprimido de naranjas seleccionadas",
             temporada = "Todo el año",
             descuento = 0,
-            imagen = "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500",
+            imagen = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWv9TqCM0FM--b2zTNvUZd7rBzcKo_P5XJoFcMj69oPC2evlgg_6VFW_A&s=10",
             descripcion = "Jugo natural sin conservantes ni azúcar añadida, prensado en frío."
         }
     });
