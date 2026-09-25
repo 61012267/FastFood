@@ -41,7 +41,7 @@ app.MapGet("/api/productos", () =>
             material = "100% Cacao Orgánico en Polvo",
             temporada = "Todo el año",
             descuento = 0,
-            imagen = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500",
+            imagen = "https://pe.iherb.com/pr/viva-naturals-organic-cacao-powder-1-lb-454-g/141400",
             descripcion = "Cacao puro en polvo de origen peruano, ideal para repostería saludable, batidos y avena."
         },
         new {
@@ -92,25 +92,25 @@ app.MapGet("/api/productos", () =>
             material = "Almendras tostadas, calcio y vitaminas",
             temporada = "Todo el año",
             descuento = 10,
-            imagen = "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500",
+            imagen = "https://i5.walmartimages.com/seo/bettergoods-Plant-Based-Vanilla-Almondmilk-Half-Gallon_a203c808-0834-42e0-a449-1197d22e1567.5cee63b747f68a25bef6ceb775314acf.jpeg",
             descripcion = "Bebida vegetal de almendras sin azúcar añadida, enriquecida con calcio y vitamina D."
         },
         new {
             id = 5,
             codigo = "SNK-005",
-            nombre = "Matcha Latte Orgánico en Polvo",
-            categoria = "Bebidas",
-            genero = "Superfood",
-            talla = "150g",
-            color = "Verde Matcha",
-            precio = 42.00,
+            nombre = "Mezcla para pancakes",
+            categoria = "Repostería",
+            genero = "Keto/Healthy",
+            talla = "567g",
+            color = "pancakes",
+            precio = 32.00,
             stock = 2, // Alerta stock bajo
-            marca = "Matcha Co",
-            material = "Té Verde Matcha Grado Ceremonial",
+            marca = "Bob's Red Mill",
+            material = "Harina para hacer pancakes",
             temporada = "Todo el año",
             descuento = 15,
-            imagen = "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=500",
-            descripcion = "Té verde matcha ceremonial rico en antioxidantes para energía natural y concentración."
+            imagen = "https://www.ecotienda.pe/wp-content/uploads/2022/07/PANCAKE-HOMESTYLE-BUTTERMILK-.jpg",
+            descripcion = "Mezcla para pancakes Homestyle Buttermilk Bob’s Red Mill 567g"
         },
 
         // --- NUEVOS PRODUCTOS DE MINIMARKET ---
